@@ -1,0 +1,325 @@
+{
+  "homepage": {
+    "title": "Votre cagnotte décentralisée",
+    "subtitle": "Créez, partagez, participez en toute sécurité de manière transparente et automatisée",
+    "create_button": "Je crée ma cagnotte",
+    "about_us": {
+      "title": "A propos",
+      "description": "Vital est une application entièrement décentralisée permettant à chacun de créer un projet de collecte de fonds pour tous types de besoins : Mariage, anniversaire, retraite, prise en charge médicale ou tout simplement pour des dépenses communes. Construit sur la blockchain Elrond, Vital est entièrement régi par des contrats intelligents qui offrent transparence et sécurité à nos utilisateurs. Notre modèle commercial nous permet de vous permettre de dépenser votre cagnotte gratuitement avec l'un de nos partenaires ou en participant à notre programme de staking.",
+      "button": "Comment ça marche ?"
+    },
+    "popular_projects": {
+      "title": "Cagnottes populaires"
+    },
+    "how_it_work": {
+      "title": "Comment ça marche ?",
+      "step1": {
+        "title": "Créer",
+        "description": "Créez et personnalisez votre cagnotte en quelques clics"
+      },
+      "step2": {
+        "title": "partager",
+        "description": "Partagez facilement votre cagnotte avec vos amis par e-mail, Twitter, Facebook ou WhatsApp"
+      },
+      "step3": {
+        "title": "Collecter",
+        "description": "Collectez et gérez des fonds en toute sécurité, regardez votre cagnotte augmenter à chaque contribution !"
+      },
+      "step4": {
+        "title": "Offrir",
+        "description": "Dépensez votre cagnotte auprès de nos partenaires, offrez-la à votre ami ou demandez une transaction sur votre propre portefeuille."
+      }
+    },
+    "personnal_project": {
+      "title": "Projets personnels",
+      "description": "Créez votre cagnotte pour tous types de besoins : Mariage, anniversaire, retraite, assistance médicale ou tout simplement pour les dépenses courantes. Et invitez vos amis, votre famille ou votre entourage à participer de la manière la plus simple."
+    },
+    "charitable_project": {
+      "title": "Associations carritatives",
+      "description": "Participez au travail remarquable de ces associations défendant les causes oubliées de ce monde. Toutes les associations présentes sur Vital sont certifiées, et toutes les transactions sont régies par des Smart Contracts qui garantissent fiabilité, transparence et sécurité."
+    },
+    "last_section": {
+      "title": "Fêtes d'anniversaire et mariages",
+      "birthday": {
+        "title": "",
+        "description": ""
+      },
+      "wedding": {
+        "title": "",
+        "description": ""
+      },
+      "baby_shower": {
+        "title": "",
+        "description": ""
+      },
+      "community": {
+        "title": "",
+        "description": ""
+      },
+      "animal": {
+        "title": "",
+        "description": ""
+      },
+      "health": {
+        "title": "",
+        "description": ""
+      },
+      "weekend": {
+        "title": "",
+        "description": ""
+      },
+      "common_expense": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "connect_modal": {
+    "title": "Connecter mon portefeuille",
+    "elrond_push": "Nouveau sur Elrond ?",
+    "learn": "Apprendre à configurer votre portefeuille"
+  },
+  "footer": {
+    "title": "Epargne",
+    "content": "Epargne du VITAL et gagne jusqu'à 252% APY",
+    "button": "Acheter VITAL",
+    "social": "Réseaux sociaux"
+  },
+  "navbar": {
+    "connect": "Se connecter",
+    "disconnect": "Se déconnecter",
+    "my_money_pot": "Mes cagnottes",
+    "project": "Projets",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "multistep_form": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "step1": {
+      "title": "Quel type de cagnotte ?",
+      "gift": "Un cadeau commun",
+      "solidarity": "Un projet solidaire",
+      "expense": "Une dépense à plusieurs",
+      "none_of_these": "Aucune de ces catégories"
+    },
+    "step2_gift": {
+      "title": "Quel type de cagnotte ?",
+      "subtitle": "Un cadeau commun",
+      "anniversary": "Anniversaire",
+      "wedding": "Mariage",
+      "retirement": "Pot de départ",
+      "house": "Crémaillère",
+      "birth": "Naissance/Bathème",
+      "other": "Autre cadeau commun"
+    },
+    "step2_solidarity": {
+      "title": "Quel type de cagnotte ?",
+      "subtitle": "Un projet solidaire",
+      "medical": "Médical",
+      "animals": "Animaux",
+      "humanitarian": "Humanitaire",
+      "studies": "Etudes",
+      "entrepreneurship": "Entrepreunariat",
+      "other": "Autre projet"
+    },
+    "step2_expense": {
+      "title": "Quel type de cagnotte ?",
+      "subtitle": "Une dépense à plusieurs",
+      "evening": "Soirée",
+      "holidays": "Vacances",
+      "funeral": "Funérailles",
+      "party": "Bachelor party",
+      "purchase": "Achat/Réparation",
+      "other": "Autre dépenses"
+    },
+    "step3": {
+      "title": "Nom & objectif",
+      "placeholderName": "Nom de ma cagnotte",
+      "placeholderGoal": "Mon objectif"
+    },
+    "step4": {
+      "robot": "Êtes-vous un robot ?",
+      "button_create": "Créer ma cagnotte"
+    }
+  },
+  "project_detail": {
+    "participate_button": "PARTICIPER AU PROJET",
+    "fromonedollar": "À partir de $1",
+    "p_category": "Categorie",
+    "collected_content": "collectés sur un objectif de",
+    "contributors": "Contributeurs",
+    "remaining": "Jours restants",
+    "aboutproject": "À propos du projet",
+    "goal_amount": "Sur un objectif de ",
+    "offer_button": "Offrir la cagnotte",
+    "setting_button": "Paramètres",
+    "setting_button2": "Editer",
+    "harvest_button": "Retirer les fonds",
+    "delete": "Supprimer la cagnotte",
+    "target_amount": "Montant à atteindre",
+    "amount_raised": "Montant collecté",
+    "participants": "Participants",
+    "copy": "Copier",
+    "copied": "Copié!",
+    "share": "PARTAGER",
+    "closed": "Cette cagnotte est fermée",
+    "participants_content": "personnes ont participé à cette cagnotte. Vous pouvez être l'un d'entre eux en cliquant sur le bouton 'Participer'.",
+    "raised": "collectés",
+    "about": {
+      "title": "A propos",
+      "content": "<strong>Bienvenue sur cette cagnotte !</strong><br />Ici, vous pouvez directement et en un clic, participer à cette cagnotte.<br /><br />- Chacun contribue la somme qu'il souhaite.<br />- Tous les paiements sont gratuits et sécurisés par Smart Contract<br /><br />Si vous n'avez pas d'EGLD pour participer, vous pouvez créer votre propre portefeuille ou télécharger l'application Maiar<br />"
+    },
+    "used_for": {
+      "title": "À quoi servira le financement",
+      "content": "<strong>Bienvenue sur cette cagnotte !</strong><br />Ici, vous pouvez directement et en un clic, participer à cette cagnotte.<br /><br />- Chacun contribue la somme qu'il souhaite.<br />- Tous les paiements sont gratuits et sécurisés par Smart Contract<br /><br />Si vous n'avez pas d'EGLD pour participer, vous pouvez créer votre propre portefeuille ou télécharger l'application Maiar<br />"
+    },
+    "about_us": {
+      "title": "Qui porte le projet",
+      "content": "<strong>Bienvenue sur cette cagnotte !</strong><br />Ici, vous pouvez directement et en un clic, participer à cette cagnotte.<br /><br />- Chacun contribue la somme qu'il souhaite.<br />- Tous les paiements sont gratuits et sécurisés par Smart Contract<br /><br />Si vous n'avez pas d'EGLD pour participer, vous pouvez créer votre propre portefeuille ou télécharger l'application Maiar<br />"
+    },
+    "organizer": "Organisateur",
+    "create_elrond_wallet": "Créer un portefeuille Elrond",
+    "download_maiar": "Télécharger l'application Maiar",
+    "verified_tooltip": "Ce projet est vérifié par VITAL",
+    "tab": {
+      "fees": "Frais",
+      "owner": "Organisateur",
+      "see": "Voir",
+      "date": "Date",
+      "action": "Action",
+      "name": "Nom",
+      "address": "Adresse",
+      "amount": "Montant",
+      "participate": "Participation",
+      "withdrawn": "Retrait",
+      "anonymous": "Anonyme",
+      "comment": "Commentaires",
+      "transaction": "Transactions",
+      "beFirst": "Soyez le premier à laisser un commentaire en participant à cette cagnotte"
+    }
+  },
+  "setting_modal": {
+    "title": "Paramètres",
+    "label_name": "Nom de la cagnotte",
+    "label_description": "Description",
+    "label_goal": "Montant à atteindre",
+    "validate_button": "Valider",
+    "menu_1": "Informations",
+    "menu_2": "Objectif",
+    "cover_picture": "Photo de couverture",
+    "select_file": "Sélectionner un fichier",
+    "cover_text1": "Format recommandé 1140x400px"
+  },
+  "participate_modal": {
+    "title": "Participer",
+    "label_firstname": "Prénom",
+    "placeholder_firstname": "Prénom",
+    "label_amount": "Montant de la participation*",
+    "placeholder_amount": "Montant en EGLD",
+    "convert_value": "Valeur: ",
+    "text_info1": "Le montant calculé peut légèrement varier en fonction de la conversion",
+    "text_info2": "(*) Champ obligatoire",
+    "identity_hide": "Cacher mon identité",
+    "validate_button": "Valider",
+    "comment_label": "Ajouter un commentaire",
+    "comment_placeholder": "Mon commentaire ici"
+  },
+  "share_modal": {
+    "title": "Aidez cette cagnotte en la partageant",
+    "subtitle": "Les cagnottes partagées sur les réseaux sociaux collectent 5 fois plus de dons*"
+  },
+  "withdraw_modal": {
+    "title": "Retirer les fonds",
+    "remaing_amount_label": "Montant restant à retirer",
+    "text": "En retirant vos fonds, votre cagnotte sera supprimée",
+    "validate_button": "Retirer mes fonds"
+  },
+  "delete_modal": {
+    "title": "Supprimer la cagnotte",
+    "message": "Êtes-vous sûr de vouloir supprimer votre cagnotte ?",
+    "delete_button": "Supprimer"
+  },
+  "changeowner_modal": {
+    "title": "Offrir la cagnotte",
+    "receiver_label": "Adresse du destinataire",
+    "validate_button": "Valider"
+  },
+  "project_search": {
+    "title": "Cagnottes",
+    "category": "Categories",
+    "sort": "Trier",
+    "research": "rechercher",
+    "project": "Projets",
+    "home": "Accueil",
+    "aboutus": "À propos de nous",
+    "contact": "Contact"
+  },
+  "how_it_work": {
+    "title": "Votre cagnotte décentralisée",
+    "subtitle": "Pour tous vos cadeaux, projets et dépenses communes",
+    "how_it_work": "Comment ça marche ?",
+    "sub_how_it_work": "Vital vous permet de collecter de l'argent simplement en 4 étapes",
+    "create_button": "Créer ma cagnotte",
+    "free": "Gratuit",
+    "sub_free": "Crée et personnalise ta cagnotte en quelques clics",
+    "simple": "Simple",
+    "sub_simple": "Crée une cagnotte en quelques clics et invite ton entourage à participer",
+    "secure": "Sécurisé",
+    "sub_secure": "Toutes les données personnelles sont protégées et encryptées sur la blockchain pour assurer un service le plus fiable possible",
+    "prices": "Prices",
+    "no_creation_fees": "Pas de coût de création de cagnotte",
+    "sub_no_creation_fees": "La création de votre cagnotte est complétement gratuite.",
+    "no_participation_fees": "Pas de commission de participation",
+    "sub_no_participation_fees": "L'envoi de fonds sur une cagnotte est non commissionné.",
+    "no_volatility": "Pas d'exposition à la volatilité",
+    "sub_no_volatility": "Notre contrat intelligent sécurise les fonds en crypto-monnaie stable afin d'assurer que le montant des cagnottes soit identiques tout au long du processus.",
+    "how_spend_pot": "Comment dépenser ma cagnotte ?",
+    "buy_from_partners": "Acheter chez un partenaire",
+    "sub_buy_from_partners": "Découvrir nos partenaires",
+    "recovery_in_vital": "Récupérer les fonds en VITAL",
+    "sub_recovery_in_vital": "Une commission unique qui permettra d'acheter et de brûler VITAL afin de participer au modèle économique déflationniste de VITAL.",
+    "recovery_in_usdc": "Récupérer les fonds en USDC",
+    "sub1_recovery_in_usdc": "Une commission dégressive en fonction du montant collecté :",
+    "sub2_recovery_in_usdc": "3% en-dessous de $2,000",
+    "sub3_recovery_in_usdc": "2.5% entre $2,000 et $100,000",
+    "sub4_recovery_in_usdc": "2% au-dessus de $100,000",
+    "offer_pot": "Offrir votre cagnotte",
+    "sub1_offer_pot": "Offrez la cagnotte pour que le bénéficiaire puisse la dépenser comme il le souhaite :",
+    "sub2_offer_pot": "Avec un de nos partenaires ou en demandant un retrait sur son wallet",
+    "anytime_withdraw": "Vous pouvez retirer votre cagnotte à tout moment, entièrement ou partiellement, selon vos souhaits.",
+    "stepsClass": "landing-how-work-container how-fr",
+    "stepsClassMobile": "landing-how-work-container how-mobile-fr"
+  },
+  "category": {
+    "anniversary": "Anniversaire",
+    "wedding": "Mariage",
+    "retirement": "Pot de départ",
+    "house": "Crémaillère",
+    "birth": "Naissance/Bathème",
+    "other_gift": "Autre cadeau commun",
+    "medical": "Médical",
+    "animals": "Animaux",
+    "humanitarian": "Humanitaire",
+    "studies": "Etudes",
+    "entrepreneurship": "Entrepreunariat",
+    "other_project": "Autre projet",
+    "evening": "Soirée",
+    "holidays": "Vacances",
+    "funeral": "Funérailles",
+    "party": "Bachelor party",
+    "purchase": "Achat/Réparation",
+    "other_purchase": "Autre dépenses",
+    "no_category": "Aucune catégorie",
+    "all": "Toutes"
+  },
+  "sorttypes": {
+    "byalphaup": "Alphabétiquement (A-Z)",
+    "byalphadown": "Alphabétiquement (Z-A)",
+    "byparticipantsup": "Nombre de participants ▴",
+    "byparticipantsdown": "Nombre de participants ▾",
+    "byraisedup": "Montant récolté ▴",
+    "byraiseddown": "Montant récolté ▾"
+  },
+  "cagnotte": "Cagnotte"
+}

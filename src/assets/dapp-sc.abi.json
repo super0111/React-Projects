@@ -1,0 +1,1325 @@
+{
+  "buildInfo": {
+    "rustc": {
+      "version": "1.62.0-nightly",
+      "commitHash": "8bf93e9b6791acee3a594ed202fdfe45ad9952b5",
+      "commitDate": "2022-04-09",
+      "channel": "Nightly",
+      "short": "rustc 1.62.0-nightly (8bf93e9b6 2022-04-09)"
+    },
+    "contractCrate": {
+      "name": "dapp-sc",
+      "version": "0.0.0"
+    },
+    "framework": {
+      "name": "elrond-wasm",
+      "version": "0.30.0"
+    }
+  },
+  "docs": [
+    "One of the simplest smart contracts possible,",
+    "it holds a single variable in storage, which anyone can increment."
+  ],
+  "name": "Dapp",
+  "constructor": {
+    "inputs": [
+      {
+        "name": "fund_token_identifier",
+        "type": "TokenIdentifier"
+      },
+      {
+        "name": "project_funds_first_fee_amount",
+        "type": "BigUint"
+      },
+      {
+        "name": "project_funds_second_fee_amount",
+        "type": "BigUint"
+      },
+      {
+        "name": "wrap_contract_address",
+        "type": "Address"
+      },
+      {
+        "name": "swap_contract_address",
+        "type": "Address"
+      },
+      {
+        "name": "wrap_token_identifier",
+        "type": "TokenIdentifier"
+      },
+      {
+        "name": "treasury_burn_address",
+        "type": "Address"
+      },
+      {
+        "name": "treasury_nft_staking_address",
+        "type": "Address"
+      },
+      {
+        "name": "treasury_vital_staking_address",
+        "type": "Address"
+      },
+      {
+        "name": "treasury_project_address",
+        "type": "Address"
+      },
+      {
+        "name": "project_live_datetime",
+        "type": "u64"
+      }
+    ],
+    "outputs": []
+  },
+  "endpoints": [
+    {
+      "name": "createProject",
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_name",
+          "type": "bytes"
+        },
+        {
+          "name": "project_category",
+          "type": "bytes"
+        },
+        {
+          "name": "project_owner_name",
+          "type": "bytes"
+        },
+        {
+          "name": "project_goal",
+          "type": "BigUint"
+        },
+        {
+          "name": "project_unique_id",
+          "type": "bytes"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "modifyProject",
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "project_name",
+          "type": "bytes"
+        },
+        {
+          "name": "project_photo",
+          "type": "bytes"
+        },
+        {
+          "name": "project_category",
+          "type": "bytes"
+        },
+        {
+          "name": "project_description",
+          "type": "bytes"
+        },
+        {
+          "name": "project_event_date",
+          "type": "bytes"
+        },
+        {
+          "name": "project_deadline",
+          "type": "bytes"
+        },
+        {
+          "name": "project_goal",
+          "type": "BigUint"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "participateProject",
+      "mutability": "mutable",
+      "payableInTokens": ["EGLD"],
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "identify_hide",
+          "type": "bool"
+        },
+        {
+          "name": "opt_user_name",
+          "type": "optional<bytes>",
+          "multi_arg": true
+        },
+        {
+          "name": "opt_comment",
+          "type": "optional<bytes>",
+          "multi_arg": true
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "withdrawFunds",
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "transferProjectOwnership",
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "new_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "removeProject",
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "getProject",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "Project"
+        }
+      ]
+    },
+    {
+      "name": "getProjectByUniqueId",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_unique_id",
+          "type": "bytes"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "Project"
+        }
+      ]
+    },
+    {
+      "name": "getProjects",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "variadic<Project>",
+          "multi_result": true
+        }
+      ]
+    },
+    {
+      "name": "checkExistProject",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_unique_id",
+          "type": "bytes"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "getOwnerProjects",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "user_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "variadic<Project>",
+          "multi_result": true
+        }
+      ]
+    },
+    {
+      "name": "getProjectTransactions",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "variadic<ProjectTransactions>",
+          "multi_result": true
+        }
+      ]
+    },
+    {
+      "name": "inactivateProject",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "activateProject",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setTreasuryBurnAddress",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "treasury_burn_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setTreasuryNftStakingAddress",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "treasury_nft_staking_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setTreasuryVitalStakingAddress",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "treasury_vital_staking_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setTreasuryProjectAddress",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "treasury_project_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setWrapContractAddress",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "wrap_contract_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setSwapContractAddress",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "swap_contract_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setProjectFundsFirstFeeAmount",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_funds_first_fee_amount",
+          "type": "BigUint"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setProjectFundsSecondFeeAmount",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_funds_second_fee_amount",
+          "type": "BigUint"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setProjectLiveDatetime",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_live_datetime",
+          "type": "u64"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setProjectVerified",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "project_verified",
+          "type": "bool"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "setProjectVerifiedByUniqueId",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "project_unique_id",
+          "type": "bytes"
+        },
+        {
+          "name": "project_verified",
+          "type": "bool"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "withdraw",
+      "onlyOwner": true,
+      "mutability": "mutable",
+      "inputs": [
+        {
+          "name": "opt_token_id",
+          "type": "optional<TokenIdentifier>",
+          "multi_arg": true
+        },
+        {
+          "name": "opt_token_amount",
+          "type": "optional<BigUint>",
+          "multi_arg": true
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "getFundTokenIdentifier",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "TokenIdentifier"
+        }
+      ]
+    },
+    {
+      "name": "getProjectLiveDatetime",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "getLastProjectId",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "getProjectIds",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "variadic<u32>",
+          "multi_result": true
+        }
+      ]
+    },
+    {
+      "name": "getProjectUniqueId",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectName",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectCategory",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectPhoto",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectDescription",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectOwnerName",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectOwnerAddress",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    },
+    {
+      "name": "getProjectEventDate",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectDeadline",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectGoal",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getProjectStatus",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "getProjectCreateDatetime",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "getProjectCollectedAmount",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getProjectWithdrawnAmount",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getProjectVerified",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "getParticipationAddresses",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "variadic<Address>",
+          "multi_result": true
+        }
+      ]
+    },
+    {
+      "name": "getDonatedAmount",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "user_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getDonatedUserName",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "user_address",
+          "type": "Address"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getLastTransactionId",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionIds",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "variadic<u32>",
+          "multi_result": true
+        }
+      ]
+    },
+    {
+      "name": "getTransactionDateTime",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionActionType",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionName",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionAddress",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionAmount",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionHash",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionIdentifyHide",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionWithdrawnFeeForBurn",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionWithdrawnFeeForNft",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionWithdrawnFeeForVital",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionWithdrawnFeeForProject",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getTransactionComment",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes"
+        }
+      ]
+    },
+    {
+      "name": "getProjectFundsFirstFeeAmount",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getProjectFundsSecondFeeAmount",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "BigUint"
+        }
+      ]
+    },
+    {
+      "name": "getProjectFundsFirstFee",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "index",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "getProjectFundsSecondFee",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "index",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "getProjectFundsThirdFee",
+      "mutability": "readonly",
+      "inputs": [
+        {
+          "name": "index",
+          "type": "u32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "getWrapContractAddress",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    },
+    {
+      "name": "getSwapContractAddress",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    },
+    {
+      "name": "getWrapTokenIdentifier",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "TokenIdentifier"
+        }
+      ]
+    },
+    {
+      "name": "getTreasuryBurnAddress",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    },
+    {
+      "name": "getTreasuryNftStakingAddress",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    },
+    {
+      "name": "getTreasuryVitalStakingAddress",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    },
+    {
+      "name": "getTreasuryProjectAddress",
+      "mutability": "readonly",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "Address"
+        }
+      ]
+    }
+  ],
+  "hasCallback": false,
+  "types": {
+    "Project": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "project_id",
+          "type": "u32"
+        },
+        {
+          "name": "project_unique_id",
+          "type": "bytes"
+        },
+        {
+          "name": "project_name",
+          "type": "bytes"
+        },
+        {
+          "name": "project_category",
+          "type": "bytes"
+        },
+        {
+          "name": "project_photo",
+          "type": "bytes"
+        },
+        {
+          "name": "project_description",
+          "type": "bytes"
+        },
+        {
+          "name": "project_owner_name",
+          "type": "bytes"
+        },
+        {
+          "name": "project_owner_address",
+          "type": "Address"
+        },
+        {
+          "name": "project_event_date",
+          "type": "bytes"
+        },
+        {
+          "name": "project_deadline",
+          "type": "bytes"
+        },
+        {
+          "name": "project_goal",
+          "type": "BigUint"
+        },
+        {
+          "name": "project_participation_numbers",
+          "type": "u32"
+        },
+        {
+          "name": "project_collected_amount",
+          "type": "BigUint"
+        },
+        {
+          "name": "project_status",
+          "type": "bool"
+        },
+        {
+          "name": "project_create_datetime",
+          "type": "u64"
+        },
+        {
+          "name": "project_withdrawn_amount",
+          "type": "BigUint"
+        },
+        {
+          "name": "project_remains_amount",
+          "type": "BigUint"
+        },
+        {
+          "name": "project_verified",
+          "type": "bool"
+        }
+      ]
+    },
+    "ProjectTransactions": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "transaction_id",
+          "type": "u32"
+        },
+        {
+          "name": "datetime",
+          "type": "u64"
+        },
+        {
+          "name": "action",
+          "type": "u32"
+        },
+        {
+          "name": "name",
+          "type": "bytes"
+        },
+        {
+          "name": "address",
+          "type": "Address"
+        },
+        {
+          "name": "amount_in_usdc",
+          "type": "BigUint"
+        },
+        {
+          "name": "withdrawn_fee_for_burn",
+          "type": "BigUint"
+        },
+        {
+          "name": "withdrawn_fee_for_nft",
+          "type": "BigUint"
+        },
+        {
+          "name": "withdrawn_fee_for_vital",
+          "type": "BigUint"
+        },
+        {
+          "name": "withdrawn_fee_for_project",
+          "type": "BigUint"
+        },
+        {
+          "name": "transaction_hash",
+          "type": "bytes"
+        },
+        {
+          "name": "identify_hide",
+          "type": "bool"
+        },
+        {
+          "name": "comment",
+          "type": "bytes"
+        }
+      ]
+    }
+  }
+}

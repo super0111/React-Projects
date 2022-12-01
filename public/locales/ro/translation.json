@@ -1,0 +1,312 @@
+{
+  "homepage": {
+    "title": "Fondul tau de bani descentralizat",
+    "subtitle": "Creeaza, distribuie, participa in siguranta si intr-un mod transparent si automatizat",
+    "create_button": "Creeaza",
+    "about_us": {
+      "title": "Despre noi",
+      "description": "Vital este o aplicatie complet descentralizata care permite oricui sa creeze un proiect de strangere de fonduri pentru toate tipurile de nevoi: Nunta, ziua de nastere, pensionare, sprijin medical sau pur si simplu pentru cheltuieli comune. Construit pe blockchain-ul Elrond, Vital este pe deplin guvernat de contracte inteligente care ofera transparenta si securitate pentru utilizatorii nostri. Modelul nostru de afaceri ne permite sa va lasam sa va cheltuiti banii in mod gratuit, cheltuindu-i la unul dintre partenerii nostri sau participand la programul nostru de staking.",
+      "button": "Cum functioneaza?"
+    },
+    "popular_projects": {
+      "title": "Proiecte populare"
+    },
+    "how_it_work": {
+      "title": "Cum functioneaza?",
+      "step1": {
+        "title": "Creeaza",
+        "description": "Creeaza si personalizeaza fondul tau de bani cu doar cateva click-uri"
+      },
+      "step2": {
+        "title": "Distribuie",
+        "description": "Distribuire usoara a fondului de bani cu prietenii prin Email, Twitter, Facebook or WhatsApp"
+      },
+      "step3": {
+        "title": "Colecteaza",
+        "description": "Colecteaza si gestioneaza fondurile in siguranta, urmareste cum creste fondul tau de bani cu fiecare contributie!"
+      },
+      "step4": {
+        "title": "Ofera",
+        "description": "Cheltuieste banii cu partenerii nostri, ofera-i prietenului tau norocos sau cere o tranzactie propriului portofel"
+      }
+    },
+    "personnal_project": {
+      "title": "Proiecte personale",
+      "description": "Creeaza propriul fond de bani pentru toate necesitatile: nunta, zi de nastere, pensionare, sprijin medical sau pur si simplu cheltuieli comune. Invita-ti prietenii, familia sau cercul de cunostinte sa participe in cel mai simplu mod"
+    },
+    "charitable_project": {
+      "title": "Asociatii caritabile",
+      "description": "Participa la remarcabila lucrare a acestor asociatii care apara cauzele uitate ale acestei lumi. Toate asociatiile prezente pe Vital sunt certificate, iar toate tranzactiile sunt guvernate de contracte inteligente care asigura fiabilitate, transparenta si securitate."
+    },
+    "last_section": {
+      "title": "Ziua de nastere si nunta",
+      "birthday": {
+        "title": "",
+        "description": ""
+      },
+      "wedding": {
+        "title": "",
+        "description": ""
+      },
+      "baby_shower": {
+        "title": "",
+        "description": ""
+      },
+      "community": {
+        "title": "",
+        "description": ""
+      },
+      "animal": {
+        "title": "",
+        "description": ""
+      },
+      "health": {
+        "title": "",
+        "description": ""
+      },
+      "weekend": {
+        "title": "",
+        "description": ""
+      },
+      "common_expense": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "connect_modal": {
+    "title": "Conecteaza-ti portofelul",
+    "elrond_push": "Nou pe elrond?",
+    "learn": "Învață cum să setezi un wallet"
+  },
+  "footer": {
+    "title": "Castiga",
+    "content": "Depoziteaza VITAL si beneficiaza de pana la 252% APY",
+    "button": "Cumpara VITAL",
+    "social": "Conecteaza retele sociale"
+  },
+  "navbar": {
+    "connect": "Conecteaza",
+    "disconnect": "Deconecteaza",
+    "my_money_pot": "Fondul meu de bani",
+    "project": "Proiecte",
+    "previous": "Anterior",
+    "next": "Următorul"
+  },
+  "multistep_form": {
+    "previous": "Anterior",
+    "next": "Următorul",
+    "step1": {
+      "title": "Tipuri de fonduri de bani?",
+      "gift": "Cadou simplu",
+      "solidarity": "Cadou simplu",
+      "expense": "O cheltuiala pentru multi",
+      "none_of_these": "Niciuna din aceste categorii"
+    },
+    "step2_gift": {
+      "title": "Tipuri de fonduri de bani?",
+      "subtitle": "Cadou simplu",
+      "anniversary": "Aniversari",
+      "wedding": "Nunta",
+      "retirement": "Fond de pensionare",
+      "house": "De casa noua",
+      "birth": "Nastere",
+      "other": "Alte cadouri"
+    },
+    "step2_solidarity": {
+      "title": "Tipuri de fonduri de bani?",
+      "subtitle": "Cadou simplu",
+      "medical": "Medical",
+      "animals": "Animale",
+      "humanitarian": "Umanitare",
+      "studies": "Studii",
+      "entrepreneurship": "Antreprenoriat",
+      "other": "Alt proiect"
+    },
+    "step2_expense": {
+      "title": "Tipuri de fonduri de bani?",
+      "subtitle": "O cheltuiala pentru multi",
+      "evening": "Iesiri",
+      "holidays": "Vacante",
+      "funeral": "Inmormantari",
+      "party": "Petrecere de absolvire",
+      "purchase": "Achizitii/Reparatii",
+      "other": "Alte cheltuieli"
+    },
+    "step3": {
+      "title": "Nume și scop",
+      "placeholderName": "Numele proiectului",
+      "placeholderGoal": "Obiectivul meu"
+    },
+    "step4": {
+      "robot": "Esti un robot?",
+      "button_create": "Creeaza fondul de bani"
+    }
+  },
+  "project_detail": {
+    "participate_button": "PARTICIPA LA PROIECT",
+    "fromonedollar": "De la $1",
+    "p_category": "Categorie",
+    "collected_content": "strânși dintr-un obiectiv de",
+    "contributors": "Colaboratori",
+    "remaining": "Zilele ramase",
+    "aboutproject": "Despre proiect",
+    "goal_amount": "Pe un gol de ",
+    "offer_button": "Oferiți fondurile",
+    "setting_button": "Setari",
+    "setting_button2": "Editați",
+    "harvest_button": "Retrage fonduri",
+    "delete": "Ștergeți VitalFund",
+    "target_amount": "Suma tinta",
+    "amount_raised": "Suma stransa",
+    "participants": "Participanti",
+    "copy": "Copiaza",
+    "copied": "Copiat!",
+    "share": "ACȚIUNE",
+    "closed": "Pisicuta asta este inchisa",
+    "participants_content": "persoanele participante in proiect pana acum. Si tu poti fi unul dintre ei apasand butonul „Participate”!",
+    "raised": "strânși",
+    "about": {
+      "title": "Despre",
+      "content": "<strong>Bine ati venit la acest fond comun!</strong><br />Aici puteti participa direct si printr-un singur click la acest fond comun.<br /><br />- Fiecare contribuie cu cat doreste.<br />- Toate platile sunt gratuite si securizate prin contract inteligent<br /><br />Daca nu aveti EGLD pentru a participa, puteti crea propriul portofel sau descarca Maiar app<br />"
+    },
+    "organizer": "Organizator",
+    "create_elrond_wallet": "Creați un portofel Elrond",
+    "download_maiar": "Descărcați aplicația Maiar",
+    "verified_tooltip": "Acest proiect este verificat de către VITAL",
+    "tab": {
+      "fees": "Taxe",
+      "owner": "Organizator",
+      "see": "Vedea",
+      "date": "Data",
+      "action": "Acțiune",
+      "name": "Nume",
+      "address": "Abordare",
+      "amount": "Suma",
+      "participate": "Participa",
+      "withdrawn": "Retras",
+      "anonymous": "Anonim",
+      "comment": "Comentarii",
+      "transaction": "Tranzacții",
+      "beFirst": "Fii primul care lasă un comentariu participând la acest pot"
+    }
+  },
+  "setting_modal": {
+    "title": "Setari",
+    "label_name": "Numele proiectului",
+    "label_description": "Descriere",
+    "label_goal": "Suma de ating",
+    "validate_button": "Validare",
+    "menu_1": "General",
+    "menu_2": "Tinta"
+  },
+  "participate_modal": {
+    "title": "Participa",
+    "label_firstname": "Numele mic",
+    "placeholder_firstname": "Numele mic",
+    "label_amount": "Valoarea participarii mele*",
+    "placeholder_amount": "Suma EGLD",
+    "convert_value": "Valoarea participarii tale: ",
+    "text_info1": "Valoarea calculata a dolarului poate varia usor in functie de conversie",
+    "text_info2": "(*) Campuri obligatorii",
+    "identity_hide": "Ascunde-mi identitatea",
+    "validate_button": "Validare",
+    "comment_label": "Adăugați un comentariu",
+    "comment_placeholder": "Comentariul meu aici",
+    "cover_picture": "Fotografie de acoperire",
+    "select_file": "Selectează fișierul",
+    "cover_text1": "Format recomandat 1140x400px"
+  },
+  "share_modal": {
+    "title": "Ajută această pisicuță împărtășindu-l",
+    "subtitle": "Strângere de fonduri partajate pe rețelele sociale colectează de 5 ori mai multe donații"
+  },
+  "withdraw_modal": {
+    "title": "Retrage fonduri",
+    "remaing_amount_label": "Amount remaining to be withdrawn",
+    "text": "Prin retragerea fondurilor tale, pisicuța ta va fi ștearsă",
+    "validate_button": "Retrage fonduri"
+  },
+  "delete_modal": {
+    "title": "Șterge proiectul",
+    "message": "Sigur doriți să vă ștergeți proiectul?",
+    "delete_button": "Șterge proiectul"
+  },
+  "project_search": {
+    "title": "Toate cazurile",
+    "category": "Categorie",
+    "sort": "Tria",
+    "research": "cercetare",
+    "project": "Proiecte",
+    "home": "Acasă",
+    "aboutus": "Despre noi",
+    "contact": "a lua legatura"
+  },
+  "how_it_work": {
+    "title": "Propriul fond de bani online descentralizat",
+    "subtitle": "Pentru toate cadourile, proiectele si cheltuielile comune",
+    "how_it_work": "Cum functioneaza?",
+    "sub_how_it_work": "Vital va permite sa va colectati banii in 4 pasi simplii",
+    "create_button": "Creeaza propriul Vital Fond",
+    "free": "Gratis",
+    "sub_free": "Creeaza-ti si personalizeaza-ti propriul fond de bani cu doar cateva click-uri",
+    "simple": "Simplu",
+    "sub_simple": "Creati un fond de bani personalizat cu doar cateva click-uri si pur si simplu invitati donatorii sa participe",
+    "secure": "Sigur",
+    "sub_secure": "Toate datele cu caracter personal sunt protejate si criptate pe blockchain pentru a asigura cel mai fiabil serviciu",
+    "prices": "Preturi",
+    "no_creation_fees": "Fara comisioane la Vital Fond",
+    "sub_no_creation_fees": "Creearea propriului Vital Fond este complet gratuit.",
+    "no_participation_fees": "Fara comisioane pentru participari",
+    "sub_no_participation_fees": "Inregistrarea unei participari este total gratuita pentru toti participantii.",
+    "no_volatility": "Nu exista expunere la volatilitatea cryptomonedelor",
+    "sub_no_volatility": "Smart contractul nostru asigura fondurile in moneda USDC pentru a asigura o suma identica pe tot parcursul procesului.",
+    "how_spend_pot": "Cum imi pot cheltui banii din fond?",
+    "buy_from_partners": "Cumpara de la un partener",
+    "sub_buy_from_partners": "Descopera partenerii nostrii",
+    "recovery_in_vital": "Recuperarea fondurilor in VITAL",
+    "sub_recovery_in_vital": "Un commision unic care va permite cumpararea si arderea VITAL pentru a participa la modelul economic deflationist al VITAL",
+    "recovery_in_usdc": "Recuperarea fondurilor USDC",
+    "sub1_recovery_in_usdc": "Un comision in scadere in functie de suma colectata:",
+    "sub2_recovery_in_usdc": "3% sub $2,000",
+    "sub3_recovery_in_usdc": "2.5% intre $2,000 si $100,000",
+    "sub4_recovery_in_usdc": "2% peste $100,000",
+    "offer_pot": "Oferiti Vital Fond",
+    "sub1_offer_pot": "Oferiti fondul de bani beneficiarului sau, astfel incat sa il poata cheltui asa cum doreste:",
+    "sub2_offer_pot": "cu unul dintre partenerii nostri sau prin solicitarea unei retrageri in portofelul sau",
+    "anytime_withdraw": "Poti sa iti retragi banii din fond oricand, partial sau intreaga suma, dupa cum doresti.",
+    "stepsClass": "landing-how-work-container how-ro",
+    "stepsClassMobile": "landing-how-work-container how-mobile-ro"
+  },
+  "category": {
+    "anniversary": "Aniversari",
+    "wedding": "Nunta",
+    "retirement": "Fond de pensionare",
+    "house": "De casa noua",
+    "birth": "Nastere",
+    "other_gift": "Alte cadouri",
+    "medical": "Medical",
+    "animals": "Animale",
+    "humanitarian": "Umanitare",
+    "studies": "Studii",
+    "entrepreneurship": "Antreprenoriat",
+    "other_project": "Alt proiect",
+    "evening": "Iesiri",
+    "holidays": "Vacante",
+    "funeral": "Inmormantari",
+    "party": "Petrecere de absolvire",
+    "purchase": "Achizitii/Reparatii",
+    "other_purchase": "Alte cheltuieli",
+    "no_category": "Fără categorie",
+    "all": "Toate"
+  },
+  "sorttypes": {
+    "byalphaup": "După alfabet (A-Z)",
+    "byalphadown": "După alfabet (Z-A)",
+    "bycollectedup": "Numărul de participanți ▴",
+    "bycollecteddown": "Numărul de participanți ▾",
+    "byraisedup": "Bani strânși ▴",
+    "byraiseddown": "Bani strânși ▾"
+  },
+  "cagnotte": "strângere de fonduri"
+}
