@@ -1,0 +1,38 @@
+.input-referral {    
+    border: 1px solid rgba(128, 128, 128, 0.289);
+    width: 40%;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 5px;
+    padding: 41px 46px;
+}
+.referral {
+    background-color: rgba(250, 235, 215, 0);
+    border: 1px solid rgba(128, 128, 128, 0.289);
+    padding: 12px 20px;
+    width: 90%;
+    border-radius: 26px;
+    outline: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #777096;
+    opacity: 1; /* Firefox */
+}
+.referral-button {
+    margin-top: 12px;
+    width: 90%;
+    border-radius: 26px;
+    background-image: linear-gradient(to right, #6452DE, #F66CC5, #FF6F6F);
+    padding: 12px 20px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .input-referral {    
+        width: 90%;
+        margin-top: 50px;
+        padding: 40px 22px;
+    }
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: #241F3E!important;
+}
+.wallet-item {
+  border: 1px solid rgba(198, 198, 198, 0.16);
+  margin: 5px 0px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.wallet-item:hover {
+  background-color: #3d3467;
+}

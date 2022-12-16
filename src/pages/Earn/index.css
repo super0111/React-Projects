@@ -1,0 +1,41 @@
+.box-item {
+    width: 49%;
+    background-color: #342D55;
+    border-radius: 10px;
+    min-width: 360px;
+    margin-top: 12px;
+}
+.earn-button {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #6452DE, #F66CC5, #FF6F6F);
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 2rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 36px;
+    align-items: center;
+    border: none;
+}
+.box-item-body-1 {
+    height: 73vh;
+}
+.box-item-body-2 {
+    height: 60h;
+}
+.box-item-body-3 {
+    height: 40vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .box  {
+        justify-content: center!important;
+    }
+}

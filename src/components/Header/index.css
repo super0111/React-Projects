@@ -1,0 +1,78 @@
+.nav {
+    background-color: #342D55;
+    padding: 0px;
+}
+.nav > div > div {
+    padding: 0 12px;
+}
+.button {
+    background-image: linear-gradient(to right, #6452DE , #F66CC5,#FF6F6F);
+    padding: 6px 10px;
+    border-radius: 18px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;    
+}
+.button:hover{
+    background-image: linear-gradient(to right, #6552debc , #f66cc6a0,#ff6f6f95);
+    transition-duration: 500ms;
+}
+.logo {
+    margin-right: 15px;
+    min-width: 38px;
+}
+.circle {
+    width: 27px;
+    height: 27px;
+    background-color: #342D55;
+    border-radius: 100%;
+}
+.fs-24 {
+    font-size: 24px;
+}
+p {
+    /* font-family: 'Space Grotesk'; */
+    font-weight: bold;
+}
+.logo > img {
+    width: 100px;
+    height: 27px;
+}
+.nav-menu {
+    background: rgba(23,24,44,.5333333333) 0 0 no-repeat padding-box;
+    box-shadow: 0.8rem 0.3rem 0.6rem rgb(0 0 0 / 16%);
+    opacity: 1;
+    -webkit-backdrop-filter: blur(2.7rem);
+    backdrop-filter: blur(2.7rem);
+    position: fixed;
+    z-index: 801;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 30.4rem;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-width: 80%;
+}
+.menu-active {
+    background-color: rgba(71, 73, 108, 0.533);
+}
+.nav-menu > div {    
+    padding: 5px 12px;
+}
+@media only screen and (max-width: 1680px) {
+    .w-80 {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .logo > img {
+        width: 100px;
+        height: 27px;   
+    }
+    .logo {
+        min-width: 38px;
+    }
+}

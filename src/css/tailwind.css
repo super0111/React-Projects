@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .r-3000 {
+        right: 3000%;
+    }
+    .r-520{
+        right: 520%;
+    }
+    .r-1000{
+        right:1000%;
+    }
+    .r-110{
+        right:110%;
+    }
+  }
+  

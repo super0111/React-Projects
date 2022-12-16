@@ -1,0 +1,20 @@
+.order {
+    border-radius: 8px;
+}
+.order-header > p {
+    padding: 10px 5px;
+    cursor: pointer;
+    color: #675d90;
+}
+.order-header > .active {
+    color: white;
+}
+.order-content {
+    background-color: #342D55;
+    border-radius: 8px;
+}
+.order-content-top > p {
+    color: #675d90;
+    font-size: 12px;
+    padding: 12px 24px;
+}

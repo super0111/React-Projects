@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'SpartanRegular';
+    src: url(./Spartan-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'SpartanMedium';
+    src: url(./Spartan-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'SpartanBold';
+    src: url(./Spartan-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'SpartanSemiBold';
+    src: url(./Spartan-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'SpartanExtraBold';
+    src: url(./Spartan-ExtraBold.ttf);
+}
+
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url(./OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url(./OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url(./OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url(./OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(./Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url(./Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(./Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url(./Poppins-Medium.ttf);
+}
+
+.font-SpartanRegular {
+    font-family: SpartanRegular;
+}
+
+.font-SpartanMedium {
+    font-family: SpartanMedium;
+}
+
+.font-SpartanBold {
+    font-family: SpartanBold;
+}
+
+.font-SpartanSemiBold {
+    font-family: SpartanSemiBold;
+}
+
+.font-SpartanExtraBold {
+    font-family: SpartanExtraBold;
+}
+
+
+.font-OpenSansLight {
+    font-family: OpenSansLight;
+}
+
+.font-OpenSansRegular {
+    font-family: OpenSansRegular;
+}
+
+.font-OpenSansSemiBold {
+    font-family: OpenSansSemiBold;
+}
+
+.font-OpenSansBold {
+    font-family: OpenSansBold;
+}
+
+.font-RobotoRegular {
+    font-family: RobotoRegular;
+}
+
+.font-RobotoMedium {
+    font-family: RobotoMedium;
+}
+
+.font-RobotoBold {
+    font-family: RobotoBold;
+}
+
+.font-PoppinsMedium {
+    font-family: PoppinsMedium;
+}

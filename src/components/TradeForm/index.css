@@ -1,0 +1,29 @@
+.trade-form-input > div {
+    cursor: pointer;
+}
+.token-menu {
+    background: rgba(23,24,44,.5333333333) 0 0 no-repeat padding-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    opacity: 1;
+    -webkit-backdrop-filter: blur(2.7rem);
+    backdrop-filter: blur(2.7rem);
+    position: fixed;
+    z-index: 801;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 25rem;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-width: 80%;    
+}
+.border-radius-0 {
+    border-radius: 0px;
+}
+.token-item {
+    border: 1px solid rgba(161, 161, 161, 0.16);
+    margin: 5px 0px;
+    padding: 5px 15px;
+}
+

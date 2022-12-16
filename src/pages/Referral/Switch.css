@@ -1,0 +1,57 @@
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.left-text {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.right-text {
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.react-switch-label {
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: space-between; */
+  cursor: pointer;
+  width: 370px;
+  height: 68px;
+  background: #342D55;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+  margin: auto;
+  color: grey;
+  border: 2px solid rgba(128, 128, 128, 0.289);
+}
+
+.react-switch-label .react-switch-button {
+  line-height: 38px;
+  font-size: 20px;
+  position: absolute;
+  content: "Joe's Task: ";
+  top: 2px;
+  left: 3px;
+  width: 180px;
+  height: 60px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background-image: linear-gradient(to right, #6452DE, #F66CC5, #FF6F6F);
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  padding: 10px;
+  color: white;
+}
+
+.react-switch-checkbox:checked+.react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.react-switch-label:active .react-switch-button {
+  width: 60px;
+}

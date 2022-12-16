@@ -1,0 +1,106 @@
+.trade-header {
+    background-color: #342D55;
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.trade-form {
+    background-color: #342D55;
+}
+.trade-result > div {
+    padding: 4px 24px;
+}
+.t-w-1 {
+    width: 70%;
+}
+.t-w-2 {
+    width: 29%;
+}
+.chartview {
+    padding-top: 15px;
+    height: 60vh;
+    border-radius: 10px;
+    /* width:100vw; */
+}
+.view-chart {
+    border-radius: 10px;
+}
+.trade-form {
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #342D55;
+    color: white;
+}
+.trade-form-input {
+    background-color: #241F3E;
+}
+.trade-form-input > div {
+    width: 33.33%;
+    margin: 4px 4px;
+    padding: 7px 14px;
+}
+.trade-form-input > .active {
+    background: linear-gradient(93.57deg, #543DFB 0.71%, #F76CC5 50.59%, #FF4848 97.83%);
+}
+.trade-form-select > div {
+    padding: 6px 14px;
+}
+.trade-token-select {
+    background-color: #241F3E;
+    padding: 14px;
+    font-size: 22px;
+}
+.trade-token-select > p {
+    font-size: 15px;
+}
+.trade-token-select > div > p {
+    font-size: 15px;
+}
+.token-select-input {
+    background-color: #00000000;
+    width: 150px;
+    border: none;
+    outline: none;
+}
+.token-select-input:focus {
+    border: none;
+}
+.token-select:hover {
+    color: #5f5a78;
+}
+.exchange-logo {
+    position: absolute;
+    width: 3.565rem;
+    height: 3.565rem;
+    left: 50%;
+    margin-left: -1.7825rem;
+    top: -1.9375rem;
+    border-radius: 3.1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background: linear-gradient(90deg,#2d42fc,#2e3dcd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ex-logo-part {
+    position: relative;
+    z-index: 1;
+}
+p + p {
+    margin-top: 0px!important;
+}
+@media only screen and (max-width: 480px) {
+    .t-w-1 {
+        width: 100%;
+    }
+    .t-w-2 {
+        width: 100%;
+    }
+    .trade-result > div {
+        padding: 4px 8px;
+    }
+}
